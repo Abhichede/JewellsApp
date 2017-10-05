@@ -1,0 +1,7 @@
+<div id="store_configurations"></div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function () {
+     window.router = new JewellsApp.Routers.StoreConfigurationsRouter({storeConfigurations: <%= @store_configurations.to_json.html_safe %>});
+  });
+</script>

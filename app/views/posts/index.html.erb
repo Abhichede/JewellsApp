@@ -1,0 +1,9 @@
+<div id="posts"></div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function () {
+     window.router = new JewellsApp.Routers.PostsRouter({posts: <%= @posts.to_json.html_safe %>});
+     Backbone.history.stop();
+     Backbone.history.start();
+  });
+</script>

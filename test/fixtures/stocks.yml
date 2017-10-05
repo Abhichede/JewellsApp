@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sku: MyString
+  name: MyString
+  category_id: 1
+  purchase_rate: MyString
+  quantity: MyString
+  sgst_rate: MyString
+  cgst_rate: MyString
+
+two:
+  sku: MyString
+  name: MyString
+  category_id: 1
+  purchase_rate: MyString
+  quantity: MyString
+  sgst_rate: MyString
+  cgst_rate: MyString

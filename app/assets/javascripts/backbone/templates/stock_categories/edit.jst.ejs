@@ -1,0 +1,44 @@
+<h3>Edit Category</h3>
+
+<form id="edit-stock_category" name="stock_category" class="form-horizontal">
+  <div class="field form-group">
+     <label for="category_name" class="control-label col-lg-2"> Category name:</label>
+     <div class="col-lg-6">
+       <input type="text" name="category_name" id="category_name" value="<%= category_name %>" class="form-control">
+     </div>
+  </div>
+
+  <div class="field form-group">
+    <label for="quality" class="col-lg-2 control-label"> Quality:</label>
+    <div class="col-lg-6">
+        <input type="text" name="quality" id="quality" value="<%= quality %>" class="form-control">
+    </div>
+  </div>
+    <div class="field form-group">
+        <label for="weight_in_stock" class="col-lg-2 control-label"> Weight(Gm) in Stock:</label>
+        <div class="col-lg-6">
+            <input type="text" name="weight_in_stock" id="weight_in_stock" value="<%= weight_in_stock %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="todays_rate" class="col-lg-2 control-label"> Today's Rate/GM:</label>
+        <div class="col-lg-6">
+            <input type="text" name="todays_rate" id="todays_rate" value="<%= todays_rate %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="amount_spent" class="col-lg-2 control-label"> Amount Spent:</label>
+        <div class="col-lg-6">
+            <input type="text" name="amount_spent" id="amount_spent" value="<%= amount_spent %>" class="form-control" readonly>
+        </div>
+    </div>
+
+  <div class="actions form-group">
+    <div class="col-lg-offset-2 col-lg-6">
+        <input type="submit" value="Update" class="btn btn-primary btn-sm" />
+    </div>
+  </div>
+
+</form>

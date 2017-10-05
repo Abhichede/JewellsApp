@@ -1,0 +1,6 @@
+<div id="stocks"></div>
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        window.router = new JewellsApp.Routers.StocksRouter({stocks: <%= @stocks.to_json.html_safe %>, stock_categories: <%= @categories.to_json.html_safe %>});
+    });
+</script>

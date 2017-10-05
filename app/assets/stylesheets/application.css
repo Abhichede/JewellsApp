@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap_and_overrides
+ *= require font-awesome
+ */
+
+body{
+    background-color: rgba(253, 210, 108, 0.15);
+}
+.navbar.navbar-default.navbar-static-top{
+    background-color: rgba(110, 87, 55, 0.69) !important;
+}
+.navbar-brand, ul.navbar-nav>li>a{
+    color: #FFFFFF !important;
+}
+.navbar-brand:hover, ul.navbar-nav>li>a:hover{
+    color: #FFFFFF !important;
+    background-color: rgba(110, 87, 55, 0.69) !important;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.42;
+    border-radius: 15px;
+}
+
+.extra-small{
+    font-weight: 100;
+    font-size: xx-small;
+}

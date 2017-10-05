@@ -1,0 +1,5 @@
+<div id="pos"></div>
+<script type="text/javascript" charset="utf-8">
+  window.router = new JewellsApp.Routers.PosRouter({items: <%= @items.to_json.html_safe %>,
+      categories: <%= @categories.to_json.html_safe %>, customers: <%= @customers.to_json.html_safe %>});
+</script>

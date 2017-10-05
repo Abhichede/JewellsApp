@@ -1,0 +1,39 @@
+<h3>Edit customer</h3>
+
+<form id="edit-customer" name="customer" class="form-horizontal">
+
+  <div class="field form-group">
+    <label for="name" class="control-label col-lg-2"> Name:</label>
+    <div class="col-lg-6">
+        <input type="text" name="name" id="name" value="<%= name %>" class="form-control">
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <label for="address" class="control-label col-lg-2"> Address:</label>
+    <div class="col-lg-6">
+        <input type="text" name="address" id="address" value="<%= address %>" class="form-control">
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <label for="email" class="control-label col-lg-2"> Email:</label>
+    <div class="col-lg-6">
+        <input type="text" name="email" id="email" value="<%= email %>" class="form-control">
+    </div>
+  </div>
+
+  <div class="field form-group" >
+    <label for="contact" class="control-label col-lg-2"> Contact:</label>
+    <div class="col-lg-6">
+        <input type="text" name="contact" id="contact" value="<%= contact %>" class="form-control">
+    </div>
+  </div>
+
+  <div class="actions form-group">
+    <div class="col-lg-offset-2 col-lg-6">
+        <input type="submit" value="Update Customer" class="btn btn-primary btn-sm" />
+    </div>
+  </div>
+
+</form>

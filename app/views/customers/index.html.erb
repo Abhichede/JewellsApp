@@ -1,0 +1,7 @@
+<div id="customers"></div>
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        window.router = new JewellsApp.Routers.CustomersRouter({customers: <%= @customers.to_json.html_safe %>});
+    });
+</script>

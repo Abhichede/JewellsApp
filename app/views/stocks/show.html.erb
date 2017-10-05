@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @stock.sku %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @stock.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @stock.category_id %>
+</p>
+
+<p>
+  <strong>Purchase rate:</strong>
+  <%= @stock.purchase_rate %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @stock.quantity %>
+</p>
+
+<p>
+  <strong>Sgst rate:</strong>
+  <%= @stock.sgst_rate %>
+</p>
+
+<p>
+  <strong>Cgst rate:</strong>
+  <%= @stock.cgst_rate %>
+</p>
+
+<%= link_to 'Edit', edit_stock_path(@stock) %> |
+<%= link_to 'Back', stocks_path %>

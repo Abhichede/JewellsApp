@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category name:</strong>
+  <%= @stock_category.category_name %>
+</p>
+
+<p>
+  <strong>Quality:</strong>
+  <%= @stock_category.quality %>
+</p>
+
+<%= link_to 'Edit', edit_stock_category_path(@stock_category) %> |
+<%= link_to 'Back', stock_categories_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Store name:</strong>
+  <%= @store_configuration.store_name %>
+</p>
+
+<p>
+  <strong>Store desc:</strong>
+  <%= @store_configuration.store_desc %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @store_configuration.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @store_configuration.phone %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @store_configuration.website %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @store_configuration.address %>
+</p>
+
+<p>
+  <strong>Gstn:</strong>
+  <%= @store_configuration.gstn %>
+</p>
+
+<%= link_to 'Edit', edit_store_configuration_path(@store_configuration) %> |
+<%= link_to 'Back', store_configurations_path %>

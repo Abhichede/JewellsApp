@@ -1,0 +1,67 @@
+<h3>Edit stock</h3>
+
+<form id="edit-stock" name="stock" class="form-horizontal">
+    <div class="field form-group">
+        <label for="sku" class="col-lg-2 control-label"> SKU:</label>
+        <div class="col-lg-6">
+            <input type="text" name="sku" id="sku" value="<%= sku %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="name" class="col-lg-2 control-label"> Name:</label>
+        <div class="col-lg-6">
+            <input type="text" name="name" id="name" value="<%= name %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group category_ids">
+        <label for="category_id" class="col-lg-2 control-label"> Category:</label>
+        <div class="col-lg-6">
+            <select name="category_id" id="category_id" class="form-control">
+
+            </select>
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="purchase_rate" class="col-lg-2 control-label"> Purchase Rate:</label>
+        <div class="col-lg-6">
+            <input type="text" name="purchase_rate" id="purchase_rate" value="<%= purchase_rate %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="quantity" class="col-lg-2 control-label"> Quantity/Weight:</label>
+        <div class="col-lg-6">
+            <input type="text" name="quantity" id="quantity" value="<%= quantity %>" class="form-control">
+        </div>
+    </div>
+
+    <div class="field form-group" >
+        <label for="weight" class="col-lg-2 control-label"> Weight(in gm):</label>
+        <div class="col-lg-6">
+            <input type="text" name="weight" id="weight" class="form-control" value="<%= weight %>">
+        </div>
+    </div>
+
+    <div class="field form-group">
+        <label for="gst_rate" class="col-lg-2 control-label"> GST Rate:</label>
+        <div class="col-lg-6">
+            <select name="gst_rate" id="gst_rate" class="form-control">
+                <option value="0">0%</option>
+                <option value="5">5%</option>
+                <option value="12">12%</option>
+                <option value="18">18%</option>
+                <option value="28">28%</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="actions form-group">
+        <div class="col-lg-offset-2 col-lg-6">
+            <input type="submit" value="Save Stock" class="btn btn-primary" />
+        </div>
+    </div>
+
+</form>
