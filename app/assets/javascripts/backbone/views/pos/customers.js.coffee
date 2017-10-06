@@ -15,7 +15,6 @@ class JewellsApp.Views.Pos.CustomersView extends Marionette.View
   customer_item: (customer) =>
     view = new JewellsApp.Views.Pos.CustomerListView({model : customer})
     @$("select#customers_list").append(view.render().el)
-    console.log(@$('select#customers_list'))
 
 
   render: ->

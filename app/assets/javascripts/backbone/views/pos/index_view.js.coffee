@@ -21,9 +21,14 @@ class JewellsApp.Views.Pos.IndexView extends Marionette.LayoutView
   customer_list: () ->
     @view = new JewellsApp.Views.Pos.CustomersView({customers: @customers})
     @getRegion('customers').show(@view)
+    
+  show_totals: () ->
+    @view = new JewellsApp.Views.Pos.PosTotals({categories: @categories})
+    @getRegion('totals').show(@view)
 
   render: ->
     @$el.html(@template())
     @renderList()
     @customer_list()
+    @show_totals()
     return this
